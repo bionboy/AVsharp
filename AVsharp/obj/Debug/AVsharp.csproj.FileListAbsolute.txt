@@ -1,0 +1,11 @@
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\bin\Debug\CSCore.dll
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\bin\Debug\OpenTK.dll
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\bin\Debug\CSCore.xml
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\bin\Debug\OpenTK.xml
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\obj\Debug\AVsharp.csprojResolveAssemblyReference.cache
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\obj\Debug\AVsharp.csproj.CoreCompileInputs.cache
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\bin\Debug\AVsharp.exe.config
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\bin\Debug\AVsharp.exe
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\bin\Debug\AVsharp.pdb
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\obj\Debug\AVsharp.exe
+C:\Users\robod\Google Drive\Code\VS\repos\AVsharp\AVsharp\obj\Debug\AVsharp.pdb
