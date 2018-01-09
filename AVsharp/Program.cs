@@ -15,10 +15,7 @@ namespace openTK_tut {
         static void Main(string[] args) {
             GameWindow win = new GameWindow(500, 500);
             Game game = new Game(win);
-
-            //SoundCapture sc = new SoundCapture();
             game.Start();
-            //sc.StopAlt();
         }
     }
 }
