@@ -33,7 +33,7 @@ namespace openTK_tut {
         }
 
         public void Start() {
-            win.Load += Loaded;     // TODO learn what this is
+            win.Load += Loaded;
             win.Resize += Resize;
             win.RenderFrame += RenderF;
             win.UpdateFrame += UpdateF;
@@ -41,7 +41,6 @@ namespace openTK_tut {
         }
 
         private void Loaded(object sender, EventArgs e) {
-            //GL.ClearColor(0.43f, 0.15f, 0.97f, 0.0f);
             GL.ClearColor(0f, 0f, 0f, 0f);
             GL.Enable(EnableCap.DepthTest);
             GL.Enable(EnableCap.Lighting);
@@ -111,7 +110,6 @@ namespace openTK_tut {
             } else {
                 beta -= updateAngle;
             }
-            //Console.WriteLine(beta);
         }
 
         private void updateColor() {
@@ -153,7 +151,7 @@ namespace openTK_tut {
 
         void NormalizeData(List<float> list) {
             for (int i = 0; i < list.Count; i++) {
-                float min = 0;// list.Min();
+                float min = 0;                      // float min = list.Min();
                 float max = list.Max();
                 list[i] = Normalize(list, list[i], min, max);
             }
