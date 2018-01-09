@@ -16,23 +16,20 @@ public class SoundCapture {
     FftProvider fft;
     WaveWriter ww = null;
     public byte[] buffer;
-    //Complex[] fftBuff;
     public Single[] fftBuff;
     public List<float> fftData;
     public FftSize FFT_RES = FftSize.Fft128;// FftSize.Fft64;
-    //public int FFT_CHUNK = 64;
     int read = 0;
 
     public SoundCapture() {
         fftBuff = new Single[(int)FFT_RES];
 
         capture = new WasapiLoopbackCapture(100, new WaveFormat(44100, 16, 1)); // speed up capture
-        //capture = new WasapiCapture(); // speed up capture
         capture.Initialize();
 
         Source = new SoundInSource(capture) { FillWithZeros = false }; ;
         convertedSource = Source
-            //.ToStereo() //2 channels (for example)
+            //.ToStereo()
             .ChangeSampleRate(44100) // 41.1kHz sample rate
             .ToSampleSource()
             .ToWaveSource(16); //16 bit pcm
@@ -48,11 +45,7 @@ public class SoundCapture {
             buffer = e.Data;
 
             fft.Add(BitConverter.ToSingle(buffer, 0), read);
-            //Console.WriteLine(BitConverter.ToSingle(buffer, 0));
             fft.GetFftData(fftBuff);
-            //foreach(var point in buffer) {
-            //    Console.WriteLine(point);
-            //}
         };
 
         //fft = new FftProvider(capture.WaveFormat.Channels, FFT_RES);
@@ -78,7 +71,6 @@ public class SoundCapture {
 
     public void StopAlt() {
         capture.Stop();
-        //ww.Dispose();
         Source.Dispose();
         capture.Dispose();
     }
